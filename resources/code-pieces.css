@@ -3,32 +3,58 @@
   src: url(../fonts/Ubuntu-Regular.ttf);
 }
 
+html{
+  font-size: calc(6px + 0.4vw + 0.2vh);
+}
+
+:root{
+  --xxsmall: 0.7rem;
+  --xsmall: 1rem;
+  --small: 1.2rem;
+  --smedium: 1.4rem;
+  --medium: 1.8rem;
+  --slarge: 2.2rem;
+  --large: 2.6rem;
+}
+
+
 body{
   font-family: 'Ubuntu', sans-serif;
-  padding: 4vw;
+  padding: 4rem;
+}
+
+p{
+  font-size: var(--small);
 }
 
 a{
   text-decoration: none;
   color: rgb(0, 104, 152);
+  font-size: var(--small);
 }
 
 h1{
   color: maroon;
-  margin-top: 3.5vw;
-  font-size: 2.5vw;
+  margin-top: 3.5rem;
+  font-size: var(--large);
 }
 
 h3{
   color: teal;
-  margin-top: 2.5vw;
-  font-size: 1.7vw;
+  margin-top: 2.5rem;
+  font-size: var(--medium);
+}
+
+h4{
+  color: cadetblue;
+  margin-top: 2rem;
+  font-size: var(--smedium);
 }
 
 .shell{
   background-color: black;
   color: white;
-  padding: 0.5vw 1vw;
+  padding: 0.5rem 1rem;
   border-left: 3px solid purple;
 }
 
@@ -38,11 +64,12 @@ h3{
 
 .note{
   background-color: lightsalmon;
-  padding: 1vw;
+  padding: 1rem;
   max-width: 60vw;
   width: fit-content;
   margin: 3vw auto;
   border-left: 3px solid chocolate;
+  font-size: var(--small);
 }
 
 .note::before{
@@ -52,8 +79,9 @@ h3{
 .editor{
   background-color: darkslategrey;
   color: white;
-  padding: 0.5vw 1vw;
+  padding: 0.2rem 0.8rem;
   border-left: 3px solid royalblue;
+  font-size: var(--xsmall);
 }
 
 .jpn{
